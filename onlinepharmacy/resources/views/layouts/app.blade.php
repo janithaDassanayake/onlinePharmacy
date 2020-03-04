@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -36,9 +37,22 @@
 
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
+                       <!-- Right Side Of Navbar -->
+                       <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-2 d-flex p-2">
+                           <a class="nav-link p-0 m-0" href="{{ route('cart.index') }}">
+
+                               <i class="fas fa-cart-arrow-down text-success fa-2x"></i>Cart
+                                   <div class="badge badge-danger">
+                                       @auth
+                                       {{Cart::session(auth()->id())->getContent()->count()}}
+                                       @else
+                                       0
+                                       @endauth
+                                   </div>
+                           </a>
+                       </li>
+
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>

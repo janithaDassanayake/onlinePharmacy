@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container  text-center">
     <h2>Products</h2>
         <div class="row">
 
@@ -16,7 +16,7 @@
                     </div>
 
                     <div class="card-body">
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="{{route('cart.add',$product->id)}}" class="card-link">Add to Cart</a>
                     </div>
 
                 </div>
