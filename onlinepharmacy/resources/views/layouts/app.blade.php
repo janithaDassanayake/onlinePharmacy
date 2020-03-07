@@ -39,10 +39,11 @@
 
                        <!-- Right Side Of Navbar -->
                        <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mr-2 d-flex p-2">
+                        <li class="nav-item mr-2 d-flex p-1">
+
                            <a class="nav-link p-0 m-0" href="{{ route('cart.index') }}">
 
-                               <i class="fas fa-cart-arrow-down text-success fa-2x"></i>Cart
+                            <img src="/shopping-cart.svg" style="height: 20px; border-right:1px "  class="pr-1 ">
                                    <div class="badge badge-danger">
                                        @auth
                                        {{Cart::session(auth()->id())->getContent()->count()}}
