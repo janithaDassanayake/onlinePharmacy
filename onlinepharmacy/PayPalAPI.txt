@@ -1,0 +1,20 @@
+*********paypal Developer account**********
+
+email  =  prathapadassanayake@gmail.com
+password =Thilini@123
+
+*********paypal coustomer account**********
+
+email =    sb-s43u881165129@personal.example.com
+password = Thilini@123
+
+
+*********paypal buissnes account***********
+
+email =   sb-zwxe61165128@business.example.com
+password = Thilini@123
+
+
+
+*********to login to paypal account********
+https://www.sandbox.paypal.com/

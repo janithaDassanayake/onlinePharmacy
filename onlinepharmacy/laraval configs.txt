@@ -1,0 +1,36 @@
+
+1---------------(image sqare)
+composer require intervention/image
+
+
+2------------------
+to get privacy file
+
+
+php artisan help make:policy
+
+php artisan make:policy ProfilePolicy -m Profile
+
+/////////////////////////////
+
+
+composer require laravel/ui
+php artisan ui vue --auth
+php artisan migrate
+
+
+//it will genarate model /controller /and DB table
+
+php artisan make:model product -a
+
+//to get laraval-cart 
+
+composer require "darryldecode/cart"
+
+//by using below link you can add funtions
+https://github.com/darryldecode/laravelshoppingcart
+
+
+//to add laravle paypal composer need to install
+
+composer require srmklive/paypal:~1.0
