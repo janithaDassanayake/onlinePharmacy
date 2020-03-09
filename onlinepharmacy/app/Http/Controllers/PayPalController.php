@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use App\Mail\OrderPaid;
+use Darryldecode\Cart\Cart;
 use Illuminate\Http\Request;
 use NunoMaduro\Collision\Provider;
 use Illuminate\Support\Facades\Mail;
@@ -82,9 +83,8 @@ class PayPalController extends Controller
 
                 //send mail
 
+                \Cart::session(auth()->id())->clear();
                 Mail::to($order->user->email)->send(new OrderPaid($order));
-
-
                 return redirect()->route('home')->withMessage('Payment successful!');
             }
 

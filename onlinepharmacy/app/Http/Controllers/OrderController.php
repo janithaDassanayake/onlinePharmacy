@@ -39,7 +39,7 @@ class OrderController extends Controller
             'shipping_fullname' => 'required',
             'shipping_address' => 'required',
             'shipping_city' => 'required',
-            'shipping_phone' => 'required',
+            'shipping_phone' => 'required','digits_between:0,9',
             'payment_method' => 'required',
         ]);
 

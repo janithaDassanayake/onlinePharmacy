@@ -48,7 +48,7 @@
 <div class="container text-center ">
     <br>
     <h3>
-        Total Price : Rs {{\Cart::session(auth()->id())->getTotal()}} /=
+        Total Price : $ {{\Cart::session(auth()->id())->getTotal()}} /=
     </h3>
 <br>
 <a  class="btn btn-primary" href="{{ route('cart.checkout') }}" role="button">Proceed to checkout</a>

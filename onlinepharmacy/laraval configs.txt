@@ -23,7 +23,7 @@ php artisan migrate
 
 php artisan make:model product -a
 
-//to get laraval-cart 
+//to get laraval-cart
 
 composer require "darryldecode/cart"
 
@@ -34,3 +34,9 @@ https://github.com/darryldecode/laravelshoppingcart
 //to add laravle paypal composer need to install
 
 composer require srmklive/paypal:~1.0
+
+//
+to
+get mailable class and markdown methord
+
+php artisan make:mail OrderPaid --markdown=mail.order.paid
